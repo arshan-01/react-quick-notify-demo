@@ -1,72 +1,12 @@
-# React Toast Demo
+# React + Vite
 
-A beautiful toast notification system built with React, TypeScript, and Tailwind CSS.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- 🎨 Beautiful, modern design with smooth animations
-- 🎯 TypeScript support with full type safety
-- 🎨 Tailwind CSS styling
-- 📱 Responsive design
-- ⚡ Lightweight and performant
-- 🎪 Multiple toast types (success, error, warning, info)
-- ⏱️ Auto-dismiss with customizable duration
-- 🎭 Smooth enter/exit animations with eye-catching icon effects
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Getting Started
+## Expanding the ESLint configuration
 
-1. **Install dependencies:**
-```bash
-npm install
-```
-
-2. **Start the development server:**
-```bash
-npm run dev
-```
-
-3. **Build for production:**
-```bash
-npm run build
-```
-
-## Usage
-
-The demo shows how to use the toast system in your React applications:
-
-```tsx
-import { useToast } from './hooks/useToast';
-
-function MyComponent() {
-  const { toast } = useToast();
-
-  const handleSuccess = () => {
-    toast.success('Operation completed successfully!');
-  };
-
-  return (
-    <button onClick={handleSuccess}>
-      Show Success Toast
-    </button>
-  );
-}
-```
-
-## Toast Types
-
-- **Success**: Green themed with checkmark icon
-- **Error**: Red themed with X icon  
-- **Warning**: Yellow themed with triangle icon
-- **Info**: Blue themed with info icon
-
-## Customization
-
-The toast system is built with Tailwind CSS and can be easily customized by modifying the component styles.
-
-## Tech Stack
-
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS
-- Lucide React (icons)# react-quick-notify-demo
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
